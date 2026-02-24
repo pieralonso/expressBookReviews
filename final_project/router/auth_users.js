@@ -45,7 +45,7 @@ regd_users.post("/login", (req, res) => {
     req.session.authorization = {
       accesToken, username
     }
-    return res.status(200).send("user sucessfully logged in")
+    return res.status(200).json({ message: "user successfully logged in", accesToken });
   } else {
     return res.status(208).json({ message: "invalid login: check credentials" })
   }
@@ -63,7 +63,7 @@ regd_users.put("/auth/review/:isbn", (req, res) => {
   Object.values(books).map(book => {
     if (book.isbn === isbn) {
       book.reviews[user] = review
-      return res.status(200).json({ message: `${user} your review for  ${book} has been added` });
+      return res.status(200).json({ message: `${user} your review for  ${book.title} has been added` });
     }
   })
 

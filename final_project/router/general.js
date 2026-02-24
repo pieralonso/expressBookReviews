@@ -119,31 +119,15 @@ public_users.get('/title/:title', function (req, res) {
     .catch(err => {
       return res.status(404).json({ message: err })
     })
-
-  // const matchedBooks = Object.values(books).filter((book) => {
-  //   const parts = book.title.toLowerCase().split(' ');
-  //   return parts.includes(title.toLowerCase()) || book.title.toLowerCase() === title.toLowerCase();
-  // }
-  // )
-  // if (matchedBooks.length > 0) {
-  //   return res.status(200).send(JSON.stringify(matchedBooks, null, 4));
-  // } else {
-  //   return res.status(404).json({ message: "Book not found" });
-  // }
 });
 
 //  Get book review
 public_users.get('/review/:isbn', function (req, res) {
   //Write your code here
   const { isbn } = req.params
-  const book = Object.values(books).find((book) => {
-    if (!book.isbn) {
-      return res.status(404).json({ message: "Book not found" });
-    } else {
-      book.isbn === isbn
-      return res.status(200).send(JSON.stringify(book.reviews, null, 4));
-    }
-  })
+  const matchedBook = Object.values(books).find((book) => book.isbn === isbn)
+  const reviews = matchedBook.reviews
+  res.status(200).send(JSON.stringify(reviews, null, 4))
 });
 
 module.exports.general = public_users;
