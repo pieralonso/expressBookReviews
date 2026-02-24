@@ -1,0 +1,12 @@
+expressBookReviews/final_project on  main [!?] is 📦 v1.0.1 via  v25.4.0
+❯ curl -i localhost:3000/review/123456
+HTTP/1.1 404 Not Found
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 28
+ETag: W/"1c-cQwmtD1BWh61ijVnPtLbyd6fnN8"
+Date: Sun, 22 Feb 2026 12:34:06 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{"message":"Book not found"}%

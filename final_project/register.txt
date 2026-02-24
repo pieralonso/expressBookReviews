@@ -1,0 +1,41 @@
+expressBookReviews/final_project on  main [!?] is 📦 v1.0.1 via  v25.4.0
+❯ curl -s -i -X POST http://localhost:3000/register \
+-H "Content-Type: application/json" \
+-d '{"username":"pieralonso", "password":"123456"}'
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 61
+ETag: W/"3d-v6m6Uonx379AzEulAwPVnSwqyJQ"
+Date: Sun, 22 Feb 2026 13:22:44 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{"message":"User successfully registered. Now you can login"}%
+expressBookReviews/final_project on  main [!?] is 📦 v1.0.1 via  v25.4.0
+❯ curl -s -i -X POST http://localhost:3000/register \
+-H "Content-Type: application/json" \
+-d '{"username":"pieralonso", "password":"123456"}'
+HTTP/1.1 400 Bad Request
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 34
+ETag: W/"22-4haFysHZ4/tC/QNrMpvM+lJ/3m0"
+Date: Sun, 22 Feb 2026 13:22:47 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{"message":"User already exists!"}%
+expressBookReviews/final_project on  main [!?] is 📦 v1.0.1 via  v25.4.0
+❯ curl -s -i -X POST http://localhost:3000/register \
+-H "Content-Type: application/json"
+HTTP/1.1 400 Bad Request
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 48
+ETag: W/"30-NDEN84RolG/kW5UWr+nCuThY5Zo"
+Date: Sun, 22 Feb 2026 13:22:51 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{"message":"username and password are required"}%

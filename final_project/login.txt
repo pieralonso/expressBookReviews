@@ -1,0 +1,15 @@
+expressBookReviews/final_project on  main [!?] is 📦 v1.0.1 via  v25.4.0
+❯ curl -i -X POST "http://localhost:3000/customer/login" \
+  -H "Content-Type: application/json" \
+  -d '{"username":"alice","password":"1234"}'
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: text/html; charset=utf-8
+Content-Length: 26
+ETag: W/"1a-K6TWtRQFdQwvjwAr+oKmR32YZiY"
+Set-Cookie: connect.sid=s%3AdYiVPpxqWXKu2QBQmPT8zdR8yRprq3P0.R1g1gXNXJ6YkJpKAABM9pIItVAHKcrrG%2FnPeuTs89G4; Path=/; HttpOnly
+Date: Sun, 22 Feb 2026 15:29:43 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+user sucessfully logged in%

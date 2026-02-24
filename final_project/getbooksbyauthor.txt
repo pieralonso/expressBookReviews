@@ -1,0 +1,33 @@
+expressBookReviews/final_project on  main [!?] is 📦 v1.0.1 via  v25.4.0
+❯ curl -i http://localhost:3000/author/unknown
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: text/html; charset=utf-8
+Content-Length: 417
+ETag: W/"1a1-3vUF/F0c1/cIXP89LsF8bfJySQQ"
+Date: Fri, 20 Feb 2026 14:00:17 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+[
+    {
+        "author": "Unknown",
+        "title": "The Epic Of Gilgamesh",
+        "reviews": {}
+    },
+    {
+        "author": "Unknown",
+        "title": "The Book Of Job",
+        "reviews": {}
+    },
+    {
+        "author": "Unknown",
+        "title": "One Thousand and One Nights",
+        "reviews": {}
+    },
+    {
+        "author": "Unknown",
+        "title": "Njál's Saga",
+        "reviews": {}
+    }
+]%
